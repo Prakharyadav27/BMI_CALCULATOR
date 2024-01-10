@@ -13,7 +13,7 @@ class HomeView extends StatelessWidget {
           style: TextStyle(
             color: Colors.white,
             fontWeight: FontWeight.bold,
-            letterSpacing: 4,
+            letterSpacing: 3,
           ),
         ),
         centerTitle: true,
@@ -24,6 +24,16 @@ class HomeView extends StatelessWidget {
           Icons.calculate,
           color: Colors.white,
         ),
+        actions: [
+          Icon(
+            Icons.settings,
+            size: 32,
+            color: Colors.white,
+          ),
+          SizedBox(
+            width: 10,
+          )
+        ],
       ),
       backgroundColor: Colors.white,
       body: const SafeArea(child: MyView()),
